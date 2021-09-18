@@ -20,5 +20,8 @@
   "homepage": "https://github.com/patpio/portfolio#readme",
   "devDependencies": {
     "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
   }
 }

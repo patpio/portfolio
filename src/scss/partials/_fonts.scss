@@ -1,0 +1,17 @@
+$fonts-map: (
+        'Heebo Black': 'heebo-black-webfont',
+        'Heebo Bold': 'heebo-bold-webfont',
+        'Heebo Medium': 'heebo-medium-webfont',
+        'Heebo Regular': 'heebo-regular-webfont',
+);
+
+@each $font-name, $file-name in $fonts-map {
+  @font-face {
+    font-family: $font-name;
+    src: url('#{$font-path}#{$file-name}.woff2') format('woff2'),
+    url('#{$font-path}#{$file-name}.woff') format('woff'),
+    url('#{$font-path}#{$file-name}.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+};

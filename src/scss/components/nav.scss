@@ -1,0 +1,16 @@
+.nav {
+  #{&}__item{
+    font-size: rem(20px);
+    text-decoration: none;
+    color: $black;
+    font-family: 'Heebo Medium', sans-serif;
+    transition: color 400ms;
+    padding: rem(8px) rem(16px);
+    margin-top: rem(20px);
+    display: inline-block;
+    &:hover {
+      color: $primary;
+
+    }
+  }
+}
