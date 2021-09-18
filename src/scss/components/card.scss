@@ -1,0 +1,37 @@
+.card {
+  width: calc(50% - rem(10px));
+  padding: rem(22px);
+  background-color: white;
+  border-radius: rem(4px);
+  box-sizing: border-box;
+  margin-right: rem(20px);
+  margin-bottom: rem(20px);
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  color: $dark;
+
+  #{&}__hdl {
+    font-family: 'Heebo Bold', sans-serif;
+    font-size: rem(26px);
+    line-height: 1.4;
+  }
+  #{&}__addInfo {
+    font-family: 'Heebo Regular', sans-serif;
+    font-size: rem(18px);
+    line-height: 1.4;
+  }
+  #{&}__date {
+    border-right: rem(1px) solid $black;
+    padding-right: rem(32px);
+    margin-right: rem(26px);
+  }
+  #{&}__category {
+
+  }
+  #{&}__text {
+    font-family: 'Heebo Regular', sans-serif;
+    font-size: rem(16px);
+    line-height: 1.4;
+  }
+}
