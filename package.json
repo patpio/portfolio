@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patpio/portfolio.git"
+  },
+  "keywords": [],
+  "author": "mrpatpio@gmail.com",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/patpio/portfolio/issues"
+  },
+  "homepage": "https://github.com/patpio/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.41.1"
+  }
+}
