@@ -1,0 +1,37 @@
+.intro {
+  display: flex;
+  min-height: calc(100vh - rem(60px));
+  align-items: center;
+  justify-content: space-between;
+
+  #{&}__lead{
+    display: block;
+  }
+  #{&}__item{
+    width: 100%;
+
+    &.intro__item--align {
+      text-align: right;
+    }
+  }
+  #{&}__hdl{
+    font-family: 'Heebo Bold', sans-serif;
+    color: $dark;
+    font-size: rem(44px);
+    line-height: 1.4;
+    margin-bottom: rem(22px);
+  }
+  #{&}__text{
+    font-family: 'Heebo Regular', sans-serif;
+    color: $dark;
+    font-size: rem(16px);
+    line-height: 1.4;
+    margin-bottom: rem(30px);
+  }
+  #{&}__avatar{
+    width: 100%;
+    height: auto;
+    max-width: rem(243px);
+    max-height: rem(243px);
+  }
+}

@@ -479,12 +479,17 @@ html {
 }
 .box {
   width: 100%;
+  box-sizing: border-box;
 }
 .box.box--header {
-  max-width: 72rem;
-  margin: auto;
   display: flex;
   justify-content: flex-end;
+}
+.box.box--maxW {
+  max-width: 73.875rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin: auto;
 }
 
 .nav .nav__item {
@@ -499,6 +504,61 @@ html {
 }
 .nav .nav__item:hover {
   color: #FF6464;
+}
+
+.intro {
+  display: flex;
+  min-height: calc(100vh - 3.75rem);
+  align-items: center;
+  justify-content: space-between;
+}
+.intro .intro__lead {
+  display: block;
+}
+.intro .intro__item {
+  width: 100%;
+}
+.intro .intro__item.intro__item--align {
+  text-align: right;
+}
+.intro .intro__hdl {
+  font-family: "Heebo Bold", sans-serif;
+  color: #21243D;
+  font-size: 2.75rem;
+  line-height: 1.4;
+  margin-bottom: 1.375rem;
+}
+.intro .intro__text {
+  font-family: "Heebo Regular", sans-serif;
+  color: #21243D;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.875rem;
+}
+.intro .intro__avatar {
+  width: 100%;
+  height: auto;
+  max-width: 15.1875rem;
+  max-height: 15.1875rem;
+}
+
+.btn {
+  border: none;
+  line-height: 2.3;
+  font-family: "Heebo Medium", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.0625rem 1.3125rem;
+  cursor: pointer;
+  border-radius: 0.125rem;
+  transition: all 800ms;
+}
+.btn.btn--primary {
+  color: white;
+  background-color: #FF6464;
+}
+.btn.btn--primary:hover {
+  color: #FF6464;
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

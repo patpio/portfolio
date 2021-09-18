@@ -1,0 +1,19 @@
+.btn {
+  border: none;
+  line-height: 2.3;
+  font-family: 'Heebo Medium', sans-serif;
+  font-size: rem(20px);
+  padding: rem(1px) rem(21px);
+  cursor: pointer;
+  border-radius: rem(2px);
+  transition: all 800ms;
+
+  &#{&}--primary {
+    color: white;
+    background-color: $primary;
+    &:hover{
+      color: $primary;
+      background-color: white;
+    }
+  }
+}
