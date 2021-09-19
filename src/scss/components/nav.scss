@@ -1,4 +1,49 @@
 .nav {
+  position: relative;
+  overflow: hidden;
+  @include mq('sm') {
+    width: 100%;
+    margin-bottom: -100vh;
+  }
+  #{&}__hamburger-lbl{
+    background: url("../images/menu.svg") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: rem(15px);
+    z-index: 10;
+    width: rem(30px);
+    height: rem(18px);
+    overflow: hidden;
+    text-indent: -99999px;
+    display: none;
+    @include mq('sm') {
+      display: block;
+    }
+  }
+  #{&}__hamburger-icon{
+    display: none;
+    z-index: 10;
+    &:checked + .nav__container{
+      right: 0;
+    }
+  }
+  #{&}__container{
+    @include mq('sm') {
+      position: relative;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      background: white;
+      transition: right 400ms;
+      min-height: 100vh;
+    }
+    &:hover {
+      right: 0;
+    }
+
+  }
   #{&}__item{
     font-size: rem(20px);
     text-decoration: none;
@@ -10,7 +55,10 @@
     display: inline-block;
     &:hover {
       color: $primary;
-
+    }
+    @include mq('sm') {
+      display: block;
+      text-align: center;
     }
   }
 }
