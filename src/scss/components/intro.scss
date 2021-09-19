@@ -15,17 +15,11 @@
     }
   }
   #{&}__hdl{
-    font-family: 'Heebo Bold', sans-serif;
-    color: $dark;
-    font-size: rem(44px);
-    line-height: 1.4;
+    @include hdl(44px, 1.4, 'Bold');
     margin-bottom: rem(22px);
   }
   #{&}__text{
-    font-family: 'Heebo Regular', sans-serif;
-    color: $dark;
-    font-size: rem(16px);
-    line-height: 1.4;
+    @include paragraph;
     margin-bottom: rem(30px);
   }
   #{&}__avatar{
