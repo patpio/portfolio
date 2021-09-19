@@ -1,5 +1,6 @@
 .box {
   width: 100%;
+  min-width: rem(300px);
   box-sizing: border-box;
   &#{&}--header {
     display: flex;

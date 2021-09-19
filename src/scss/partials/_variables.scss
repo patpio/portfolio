@@ -15,3 +15,9 @@ $font-path: '../fonts/';
 
 //layout
 $breakpoint-lg: 855px;
+
+$breakpoints: (
+        'sm': '(max-width: 600px)',
+        'md': '(max-width: 991px)',
+        'lg': '(max-width: 1200px)'
+);

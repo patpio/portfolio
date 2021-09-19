@@ -479,6 +479,7 @@ html {
 }
 .box {
   width: 100%;
+  min-width: 18.75rem;
   box-sizing: border-box;
 }
 .box.box--header {
@@ -495,10 +496,19 @@ html {
   background-color: #EDF7FA;
 }
 
+.posts {
+  padding-top: 0.00625rem;
+  padding-bottom: 0.9375rem;
+}
 .posts .posts__header--more {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media screen and (max-width: 600px) {
+  .posts .posts__header--more {
+    display: block;
+  }
 }
 .posts .posts__hdl {
   font-size: 1.375rem;
@@ -506,12 +516,22 @@ html {
   font-family: "Heebo Regular", sans-serif;
   color: #21243D;
 }
+@media screen and (max-width: 600px) {
+  .posts .posts__hdl {
+    text-align: center;
+  }
+}
 .posts .posts__link {
   font-size: 1rem;
   line-height: 1.2;
   font-family: "Heebo Regular", sans-serif;
   color: #00A8CC;
   text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .posts .posts__link {
+    display: none;
+  }
 }
 .posts .posts__content {
   display: flex;
@@ -539,6 +559,15 @@ html {
   min-height: calc(100vh - 3.75rem);
   align-items: center;
   justify-content: space-between;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 .intro .intro__lead {
   display: block;
@@ -546,8 +575,18 @@ html {
 .intro .intro__item {
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .intro .intro__item {
+    text-align: center;
+  }
+}
 .intro .intro__item.intro__item--align {
   text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__item.intro__item--align {
+    text-align: center;
+  }
 }
 .intro .intro__hdl {
   font-size: 2.75rem;
@@ -555,6 +594,11 @@ html {
   font-family: "Heebo Bold", sans-serif;
   color: #21243D;
   margin-bottom: 1.375rem;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__hdl {
+    font-size: 2rem;
+  }
 }
 .intro .intro__text {
   font-size: 1rem;
@@ -568,6 +612,14 @@ html {
   height: auto;
   max-width: 15.1875rem;
   max-height: 15.1875rem;
+  box-shadow: -5px 13px 0 0 #EDF7FA;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__avatar {
+    max-width: 10.875rem;
+    max-height: 10.875rem;
+  }
 }
 
 .btn {
@@ -598,6 +650,12 @@ html {
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
   color: #21243D;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .card:nth-child(even) {
   margin-right: 0;
@@ -640,11 +698,22 @@ html {
   padding-bottom: 0.9375rem;
   margin-bottom: 1.875rem;
 }
+@media screen and (max-width: 600px) {
+  .case {
+    flex-direction: column;
+  }
+}
 .case .case__img {
   width: 100%;
   max-width: 15.375rem;
   border-radius: 0.375rem;
   margin-right: 0.9375rem;
+}
+@media screen and (max-width: 600px) {
+  .case .case__img {
+    max-width: 100%;
+    margin-bottom: 0.9375rem;
+  }
 }
 .case .case__hdl {
   font-size: 1.875rem;

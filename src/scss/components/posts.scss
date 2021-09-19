@@ -1,15 +1,26 @@
 .posts {
+  padding-top: rem(0.1px);
+  padding-bottom: rem(15px);
   #{&}__header--more {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @include mq('sm') {
+      display: block;
+    }
   }
   #{&}__hdl {
     @include hdl;
+    @include mq('sm') {
+      text-align: center;
+    }
   }
   #{&}__link {
     @include paragraph($line-height: 1.2, $color: $secondary);
     text-decoration: none;
+    @include mq('sm') {
+      display: none;
+    }
   }
   #{&}__content {
     display: flex;
